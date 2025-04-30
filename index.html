@@ -184,11 +184,13 @@
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li>+1.5 — I combined 2 datasets, 'IMF-Adapted ND-GAIN Readiness Index' and 'Government Environmental Spending' on ISO3 country codes so that I can explore a more interesting relationship between financial expenditures and climate readiness instead of exploring the relationship between one domain. I filtered to includ the 2021 data only, simply because it had the least amount of null values and it was the most recent, and hence the most relevant. I dropped the null values since they are Missing Completely at Random (MCAR) because the IMF values were either not collected or computed, and not because they were ommitted from the tabel on purpose. </li>
-          <li>-1.0 - I used a light-to-dark OKLCH green gradient to empahsize the differnces in climate readiness even when the differnece between countries was not too great and to evoke a feeling fo climate-reaidess with green.</li>
-          <li>-1.0 - “Average of Others” is displayed with minimalist distinction (gray bar, italic label), not hiding it but subtly lowering its rhetorical weight.</li></li>
-          <li>-1.5 - While I ddin't manipulate or exlucde any data, I did use mean to skew the avrage of the others section. By simply plotting the outliers (the top 10 coutnires), the average was skweed signfiicanlty and I sued that to my advnatge ot persudae the readers. This made the data appeared mcuh mroe conviving than having another sctater lot with obviously msisingd data.</li>
-          <li>-2.0 - The tile claims that the data supports  exevrioneal spenders to be more climate ready when we comapred the baised average, but it leaves out a lot of information and presents a deceptive takeaway.</li>
+          <ul>
+  <li>+1.5 — I again merged the “IMF-Adapted ND-GAIN Readiness Index” and “Government Environmental Spending” datasets via ISO3 codes. I restricted the dataset to the year 2021 for consistency and reliability, and dropped missing values assumed to be MCAR. This clean combination allowed me to construct a focused comparative visualization across countries.</li>
+  <li>-1.0 — I applied a light-to-dark OKLCH green gradient to highlight differences in climate readiness across the top 10 spenders. While these differences were not always large, the gradient was chosen to visually amplify distinctions and associate “green” with ecological success.</li>
+  <li>-1.0 — I styled the “Average of Others” bar using subtle visual cues: desaturated gray coloring and an italicized label. These design choices didn't hide the average but deliberately softened its rhetorical impact, making the top 10 seem more dominant by contrast.</li>
+  <li>-1.5 — Though I did not exclude any data, I used the group mean of non-top-spenders to create a single “Average of Others” bar. This aggregation reduced the visibility of individual variation and strategically exaggerated the gap between the top 10 and the global average. The simplification made the top performers look significantly stronger than they might if compared against a fuller distribution.</li>
+  <li>-2.0 — The title confidently states that the top 10 spenders are more climate-ready, relying on a selective comparison against a pooled average. While not technically incorrect, this framing withholds context and creates a misleadingly definitive narrative by omitting the rest of the distribution.</li>
+</ul>
         </ul>
       </section>
 
