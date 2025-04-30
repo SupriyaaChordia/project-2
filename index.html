@@ -158,18 +158,18 @@
         <h3>FOR the Proposition</h3>
 
         <figure>
-          <img src="project2_g1.png" alt="" />
-          <figcaption>There are no overlapping countries between the top 10 Envrionmental Spenders and the top 10 Climate Ready countries, denoting that you don't necessarily need to spend the most to be the most ready for the climate crisis.</figcaption>
+          <img src="project2_g1.png" alt="Scatter plot showing that there's no overlap between the top 10 spenders and climate-ready countries." style="width: 100%; height: auto;" />
+          <figcaption> No overlapping countries between the top 10 environmental spenders and the top 10 climate-ready countries, denoting that you don't necessarily need to spend the most to be the most ready for the climate crisis.</figcaption>
         </figure>
 
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li>+1.5 — I combined 2 datasets, 'IMF-Adapted ND-GAIN Readiness Index' and 'Government Environmental Spending' on ISO3 country codes so that I can explore a more interesting relationship between financial expenditures and climate readiness instead of exploring the relationship between one domain. I filtered to includ the 2021 data only, simply because it had the least amount of null values and it was the most recent, and hence the most relevant. I dropped the null values since they are Missing Completely at Random (MCAR) because the IMF values were either not collected or computed, and not because they were ommitted from the tabel on purpose. </li>
-          <li>+1.5 - I created 4 different categories - top 10 countries based on climate readiness and government expediture, coutnries that fall into both (gray), and countries that flal into neither. I had considered the alternaive of plotting allt he availbe data for all the coutnires but it showed a simialr trend, so I decided to stick with the top 10 coutnires. I simply included top 10 for visual clairty purposes since including too mjuch data made the vsiualization confusing, but one could argue that there could be more overlapping countires if I had increased the number to 15 or 20 top countires.</li>
-          <li>0.5 - I decided to use IMF readiness score instead of carbon emissions or other enevrionemtal measures as it is the unievrsally accepted measurment for climate readiness, but since it does not ahve units and the calculation is complex, it might make the graph a little mroe ddifuclt to udnerstand. </li>
-          <li>-1.0 - I highlightd only the top 10 countires to amek them stand out form the rest of the pool to empahsize the lack of oevrlap further, however the rets of the coutnries show some corrleation between spending and climate readiness as they lie closer toegethr in a striaghter line. Not empahsizing the mid and the lower section for the data could be considered deceptive</li>
-          <li>-1.0 - I used OKLCH colors instead of rbg colors so that the brightness of my colors are more or less equal, and I tried to vsiually empahsize all groups equally. </li>
+          <li>+1.5 — I merged two datasets, the “IMF-Adapted ND-GAIN Readiness Index” and “Government Environmental Spending,” using ISO3 country codes to explore the relationship between financial expenditure and climate readiness. I filtered the data to only include 2021 since it had the fewest nulls and was the most recent and relevant year. Missing values were dropped on the assumption of MCAR (Missing Completely at Random), as they were likely not collected or computed rather than intentionally omitted.</li>
+          <li>+1.5 — I created four categorical groups: the top 10 countries by climate readiness, the top 10 by environmental spending, the countries that belonged to both, and those that fell into neither. Initially, I considered plotting all countries, but I found the patterns were consistent and focusing on the top 10 enhanced clarity. While it’s possible that using the top 15 or 20 might have shown more overlap, limiting to 10 improved legibility and allowed the argument to be more focused.</li>
+          <li>+0.5 — I used the IMF-Adapted Readiness Score rather than more direct environmental metrics like carbon emissions, since it's a globally recognized composite index for climate preparedness. However, its lack of units and complex derivation could reduce interpretability for some readers.</li>
+          <li>-1.0 — I selectively emphasized only the top 10 countries with bold labels and arrows, intentionally drawing attention to their lack of overlap. This deemphasized the remaining countries, which actually show a mild correlation, as many lie along a diagonal trend. Omitting further annotation for them arguably presents a skewed interpretation.</li>
+          <li>-1.0 — I used OKLCH color space instead of RGB to ensure consistent perceived brightness across categories. While the intent was to give all groups equal visual weight, using uniform chroma and lightness can still subtly steer visual emphasis.</li>
         </ul>
       </section>
 
@@ -177,20 +177,18 @@
         <h3>AGAINST the Proposition</h3>
 
         <figure>
-          <img src="project2_g2.png" alt="" />
-          <figcaption>Top 10 Countries with High Envrionemntal Expenditures are more Climate Ready when comapred to the Gloabl Avergae of the Rest fo the World.</figcaption>
+          <img src="project2_g2.png" alt="Bar chart showing that the IMF scores for the top 10 spenders are greater than the global mean of the IMF score for the rest of the countries." style="width: 100%; height: auto;" />
+          <figcaption>Top 10 countries with high environmental expenditures are more climate-ready when compared to the global average of the rest of the world. </figcaption>
         </figure>
 
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <ul>
-  <li>+1.5 — I again merged the “IMF-Adapted ND-GAIN Readiness Index” and “Government Environmental Spending” datasets via ISO3 codes. I restricted the dataset to the year 2021 for consistency and reliability, and dropped missing values assumed to be MCAR. This clean combination allowed me to construct a focused comparative visualization across countries.</li>
-  <li>-1.0 — I applied a light-to-dark OKLCH green gradient to highlight differences in climate readiness across the top 10 spenders. While these differences were not always large, the gradient was chosen to visually amplify distinctions and associate “green” with ecological success.</li>
-  <li>-1.0 — I styled the “Average of Others” bar using subtle visual cues: desaturated gray coloring and an italicized label. These design choices didn't hide the average but deliberately softened its rhetorical impact, making the top 10 seem more dominant by contrast.</li>
-  <li>-1.5 — Though I did not exclude any data, I used the group mean of non-top-spenders to create a single “Average of Others” bar. This aggregation reduced the visibility of individual variation and strategically exaggerated the gap between the top 10 and the global average. The simplification made the top performers look significantly stronger than they might if compared against a fuller distribution.</li>
-  <li>-2.0 — The title confidently states that the top 10 spenders are more climate-ready, relying on a selective comparison against a pooled average. While not technically incorrect, this framing withholds context and creates a misleadingly definitive narrative by omitting the rest of the distribution.</li>
-</ul>
+          <li>+1.5 — I again merged the “IMF-Adapted ND-GAIN Readiness Index” and “Government Environmental Spending” datasets via ISO3 codes. I restricted the dataset to the year 2021 for consistency and reliability, and dropped missing values assumed to be MCAR. This clean combination allowed me to construct a focused comparative visualization across countries.</li>
+          <li>-1.0 — I applied a light-to-dark OKLCH green gradient to highlight differences in climate readiness across the top 10 spenders. While these differences were not always large, the gradient was chosen to visually amplify distinctions and associate “green” with ecological success.</li>
+          <li>-1.0 — I styled the “Average of Others” bar using subtle visual cues: desaturated gray coloring and an italicized label. These design choices didn't hide the average but deliberately softened its rhetorical impact, making the top 10 seem more dominant by contrast.</li>
+          <li>-1.5 — Though I did not exclude any data, I used the group mean of non-top-spenders to create a single “Average of Others” bar. This aggregation reduced the visibility of individual variation and strategically exaggerated the gap between the top 10 and the global average. The simplification made the top performers look significantly stronger than they might if compared against a fuller distribution.</li>
+          <li>-2.0 — The title confidently states that the top 10 spenders are more climate-ready, relying on a selective comparison against a pooled average. While not technically incorrect, this framing withholds context and creates a misleadingly definitive narrative by omitting the rest of the distribution.</li>
         </ul>
       </section>
 
@@ -199,7 +197,7 @@
 
         <p>This project challenged me to critically examine how data from different sources can be integrated meaningfully. At first, I struggled to find overlapping keys across datasets, but once I discovered that ISO3 codes aligned environmental spending with climate readiness, it unlocked a compelling intersection. Coming from a third-world country and now studying in a first-world context, I’ve been exposed to both sides of the narrative: the idea that only wealthy countries can afford to prioritize the environment, versus the argument that climate readiness doesn't always require financial abundance. I was curious to what the data supported and this led me to pursue this exploration. Those were conscious choices—and I now know to look for them in others’ work too. I’m especially wary now of charts that use summary statistics without showing the full picture.</p>
         <p>One of my biggest learnings was that choosing between data visualization practices isn’t just about aesthetics or best practices—it’s a strategic decision that dramatically alters persuasion. With the bar chart, I realized how easy it was to hide variability by using group averages or curated subsets. The scatterplot, while more data-rich, allowed me to amplify specific points via annotation, but also showed how even placement and label nudges can shape perception. This experience made it clear how important ethical analysis is—especially since even small design decisions can reinforce a message, or distort one.</p>
-        <p>I think ethical visualization isn’t just about avoiding deceptive transofrmations or excluding data. There’s no neutral visualization—just choices that either respect or obscure nuance. For me, the line between persuasive and misleading often lies in who’s being left out or what gets flattened. As a reader, I’m now more attuned to omission. As a data scientist, I am now aware that data is rarely ever objective and intention plays a significant role.</p>
+        <p>I think ethical visualization isn’t just about avoiding deceptive transformations or excluding data. There’s no neutral visualization—just choices that either respect or obscure nuance. For me, the line between persuasive and misleading often lies in who’s being left out or what gets flattened. As a reader, I’m now more attuned to omission. As a data scientist, I am now aware that data is rarely ever objective and intention plays a significant role.</p>
       </section>
     </main>
   </body>
